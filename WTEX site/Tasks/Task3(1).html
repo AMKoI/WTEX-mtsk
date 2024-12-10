@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для збору інформації</title>
+</head>
+<body>
+    <h1>Форма для збору інформації</h1>
+    <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+       
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+        <br>
+        <label for="surname">Прізвище:</label>
+        <input type="text" id="surname" name="surname" placeholder="Ваше прізвище" required>
+        <br>
+        
+       
+        <label>Стать:</label>
+        <input type="radio" id="male" name="gender" value="Чоловіча" required>
+        <label for="male">Чоловіча</label>
+        <input type="radio" id="female" name="gender" value="Жіноча" required>
+        <label for="female">Жіноча</label>
+        <br>
+
+       
+        <label for="group">Група:</label>
+        <select id="group" name="group" required>
+            <option value="IT-21-1">IT-21-1</option>
+            <option value="IT-21-2">СОІ-24-1м</option>
+            <option value="IT-22-1">IT-22-1</option>
+        </select>
+        <br>
+
+        
+        <label for="file">Завантажити файл:</label>
+        <input type="file" id="file" name="file">
+        <br>
+
+    
+        <label>
+            <input type="checkbox" name="subscribe" value="yes"> Підписатися на новини
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="notifications" value="yes"> Отримувати повідомлення
+        </label>
+        <br>
+
+        
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #000000
+}
+#timeTable .headcol, #timeTable .headday {
+	position:sticky;
+	position: -webkit-sticky;
+	min-width: 75px;
+	left:0px;
+}
+.headdate {
+    border: 2px double green;
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+}
+#timeTable .closed{
+	background: linear-gradient(to top, #b8b8b8, #a4a4a4);
+}
+#timeTable th[class='headcol']{
+	background-color: #fff;
+	color: black;
+	border-right: 1px solid #DDDDDD;
+}
+.table-container {
+	overflow-x:scroll;
+}
+#timeTable .lesson, #timeTable .start, #timeTable .finish {
+	display: block;
+}
+#timeTable .start {
+	font-size: 16px;
+}
+#timeTable {
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+#timeTable td{
+	text-align: center;
+	padding: 0;
+	border: 1px solid #ddd;
+	background: linear-gradient(to bottom, #fcfcfc, #f6f6f6) repeat-x scroll 0 0 #F3F3F3;
+}
+#timeTable .cell, #timeTable .cell>div {
+	min-height: 60px;
+}
+#timeTable th{
+	padding: 2px;
+	background-color: #85ccab;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #DDDDDD;
+}
+#timeTable tr td:first-child{
+	padding-left: 4px;
+	padding-right: 4px;
+}
+#timeTable tr td:not(:first-child) > div {
+	min-width: 115px;
+}
+#timeTable td {
+	text-align: center;
+	padding: 0;
+}
+#timeTable .cell > div:not(:first-child) {
+    margin-top:8px;
+}
+.lesson-4 {
+    background:#f6eaa3;
+}
+.lesson-2 {
+    background:#e7abf0;
+}
+.lesson-1 {
+    background: #a1d1f6;
+}
+.closed {
+    background: linear-gradient(to top, #b8b8b8, #a4a4a4);
+}

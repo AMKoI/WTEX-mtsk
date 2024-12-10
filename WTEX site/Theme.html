@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MTSK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/Main.css">
+<link rel="stylesheet" href="CSS/TaskBtn.css">
+<link rel="stylesheet" href="">
+</head>
+<body>
+
+<div class="header">
+  <h1>Комп’ютерне моделювання. Основи алгоритмізації</h1>
+  <p>Сторінка, створена Мациком Олексієм (MTSK) для  виконання завданнь з предмету "WTEX".</p>
+</div>
+
+<div class="navbar">
+  <a href="Main.html" class="">Головна</a>
+  <a href="Theme.html" class="">Тема</a>
+  <a href="Lessons.html" class="">Завдання</a>
+  <a href="https://github.com/AMKoI" class="right">GitHub</a>
+</div>
+
+<div class="theme">
+    <h2>Поняття алгоритму:</h2>
+    <h4><i>Алгоритм</i> — це скінченна послідовність чітко визначених кроків (інструкцій), які однозначно описують порядок виконання дій для досягнення заданої мети або розв’язання задачі.</h4>
+    <br>
+    <h2>Основні характеристики алгоритму:</h2>
+    <ol>
+        <li><strong>Скінченність</strong> — алгоритм має завершуватися після виконання обмеженого числа кроків.</li>
+        <li><strong>Однозначність</strong> — кожна команда алгоритму має бути точно визначеною.</li>
+        <li><strong>Масовість</strong> — алгоритм застосовується до певного класу задач.</li>
+        <li><strong>Результативність</strong> — виконання алгоритму обов’язково приводить до результату.</li>
+    </ol>
+    <br>
+    <h2>Властивості алгоритмів:</h2>
+    <ol>
+        <li><strong>Дискретність</strong> — процес виконання алгоритму розбивається на окремі етапи (кроки).</li>
+        <li><strong>Формальність</strong> — виконавець алгоритму діє строго за вказівками, не потребуючи додаткових пояснень.</li>
+        <li><strong>Зрозумілість</strong> — алгоритм повинен бути зрозумілим виконавцю.</li>
+        <li><strong>Ефективність</strong> — алгоритм має досягати мети з мінімальними затратами ресурсів.</li>
+    </ol>
+    <br>
+    <h2>Форми подання алгоритму:</h2>
+    <ol>
+        <li><strong>Словесно-описова форма</strong> — використання текстового опису для опису кожного кроку.</li>
+        <li><strong>Графічна форма</strong> — представлення алгоритму у вигляді блок-схем.</li>
+        <li><strong>Програмний код</strong> — запис алгоритму мовою програмування.</li>
+        <li><strong>Таблична форма</strong> — організація алгоритму у вигляді таблиць для відображення умов і дій.</li>
+    </ol>
+    <br>
+    <h2>Виконавець алгоритму</h2>
+    <h4>Це об’єкт (<i>людина, машина чи програма</i>), який виконує команди алгоритму. Виконавець повинен розуміти команди алгоритму та мати необхідні ресурси для їх виконання.</h4>
+    <br>
+    <h2>Система команд виконавця алгоритму:</h2>
+    <h4>Це <i>набір інструкцій</i>, які здатний виконати виконавець. Вона визначає можливості виконавця:</h4>
+    <ol>
+        <li><strong>Прості команди</strong> — базові операції (додати, відняти, перемістити тощо).</li>
+        <li><strong>Складені команди</strong> — комбінації простих команд, що утворюють складніші дії.</li>
+        <li><strong>Команди керування</strong> — операції для управління виконанням алгоритму (умови, цикли).</li>
+    </ol>
+    <br>
+    <h2>Базові структури алгоритмів:</h2>
+    <ol>
+        <li><strong>Слідування</strong> — послідовне виконання команд (лінійна структура).</li>
+        <li><strong>Розгалуження</strong> — вибір між альтернативними командами в залежності від умови.</li>
+        <li><strong>Повторення</strong> — багаторазове виконання однієї чи кількох команд (цикл).</li>
+    </ol>
+    <br>
+    
+    <h2>Графічні схеми базових структур алгоритмів:</h2>
+    <button class="accordion">Слідування:</button>
+<div class="panel">
+    <ul><li><strong>[ Початок ] → [ Дія 1 ] → [ Дія 2 ] → [ Кінець ]</strong></li>
+</div>
+    <br>
+<button class="accordion">Розгалуження:</button>
+<div class="panel">
+    <img class="Shema" src="Image/Umova.png">
+</div>
+    <br>
+<button class="accordion">Повторення:</button>
+<div class="panel">
+    <img class="Shema" src="Image/Povernennia.png">
+</div>
+
+    <style>
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    </style>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+</div>
+
+<div class="theme">
+    <h2>Застосування комп’ютерного моделювання:</h2>
+    <ol>
+        <li><strong>Наука</strong> — моделювання фізичних, хімічних чи біологічних процесів.</li>
+        <li><strong>Інженерія</strong> — створення прототипів і випробування конструкцій.</li>
+        <li><strong>Економіка</strong> — прогнозування фінансових тенденцій.</li>
+        <li><strong>Освіта</strong> — розробка навчальних симуляторів.</li>
+    </ol>
+    <p>Знання основ алгоритмізації дозволяє розробляти ефективні моделі, оптимізувати процеси і забезпечувати точність у розв’язанні складних задач.</p>
+    <br>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

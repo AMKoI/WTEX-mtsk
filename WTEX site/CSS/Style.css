@@ -1,0 +1,58 @@
+
+header h1 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+
+.info-block {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+
+.zagadka-block {
+    background-color: lightyellow;
+    text-align: center;
+    padding: 20px;
+    transform: rotate(20deg);
+    margin: 20px;
+    display: inline-block;
+}
+
+
+.rotate-answer {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+
+.rebus-block {
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px;
+    transform: rotate(-20deg);
+    margin: 20px;
+    display: inline-block;
+}
+
+
+.task-block {
+    transform: skewX(20deg);
+    background-color: lightgreen;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.question-block {
+    transform: rotate(-20deg);
+    background-color: lightcoral;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
